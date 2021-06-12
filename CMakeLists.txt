@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(Badminton)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(shuttle shuttle_point.cpp)
+target_link_libraries(shuttle ${OpenCV_LIBS})
+#message(STATUS "OpenCV_INCLUDE_DIRS = ${OpenCV_INCLUDE_DIRS}")
+#message(STATUS "OpenCV_LIBS = ${OpenCV_LIBS}")

@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Other Files
+*.mp4
+*.xlsx
+*.ove
+/build/
