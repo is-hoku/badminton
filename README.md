@@ -12,3 +12,15 @@ $ cd build
 $ cmake ..
 $ make
 ```
+## usage
+1. Execute ```get_frames.cpp``` to split video into frames(.png).
+2. Execute ```shuttle_point.cpp``` and draw and extract the coordinates of a shuttle to csv file.
+
+### how to draw and extract
+- Left Click : draw point.
+- j : previous frame.
+- k : next frame.
+- h : previous trial.
+- l : next trial.
+
+* When the process of ``shuttle_point.cpp`` is finished, a csv file with the coordinates of a shuttle will be automatically saved.
