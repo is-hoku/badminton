@@ -26,5 +26,6 @@ $ ./shuttle_point 4710 10
 - k : next frame.
 - h : previous trial.
 - l : next trial.
+- x : erase(=ignore) a frame.
 
 * When the process of ``shuttle_point.cpp`` is finished, a csv file with the coordinates of a shuttle will be automatically saved.
