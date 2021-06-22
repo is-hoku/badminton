@@ -15,7 +15,8 @@ int main(int argc, char** argv) {
 		std::cout << "Cannot open " << argv[1] << "!" << std::endl;
 		return 1;
 	}
-	for (int count = 0; count < cap.get(cv::CAP_PROP_FRAME_COUNT-2); count++){
+	std::cout << "The number of total frames: " << cap.get(cv::CAP_PROP_FRAME_COUNT) << std::endl;
+	for (int count = 0; count < cap.get(cv::CAP_PROP_FRAME_COUNT); count++){
 		cv::Mat frame;
 		if (!cap.read(frame)){
 			std::cout << "Failed to extract a frame." << count << std::endl;
